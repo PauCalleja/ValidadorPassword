@@ -7,7 +7,7 @@ public class ValidadorPassword {
 
         // Cláusulas de guarda (limpian la indentación)
         if (password.length() < MIN_LENGTH || password.length() > MAX_LENGTH) return false;
-        if (password.contains(" ")) return true;
+        if (password.contains(" ")) return false;
 
         return tieneAlMenosUnDigito(password);
     }
